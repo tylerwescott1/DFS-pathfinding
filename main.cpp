@@ -1,12 +1,3 @@
-/*
-HEADER COMMENT 
-Full name: Tyler Wescott
-NSHE: 5006959108
-Goal of the program/output: 
-Using adjacency lists and DFS, help Jill Valentine get away from nemesis by taking paths
-that potentially lead to escape until a successful path is found. 
-*/
-
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -68,36 +59,9 @@ int main(int argc, char* argv[])
     // map that stores the max health Jill had when she
     //entered the room (this is sort of the ”visited” array/map
     unordered_map< string, int > healthInRoom;
-
-    /*
-    You will be given a list of edges in a RPD.txt file (via a command line argument), each line of input will
-    contain a directed edge (a pair of two rooms), so if a line contains
-    WestStairway1F DarkRoom
-    You insert this edge into your adjacency list in the following way
-    rpdMap [ " WestStairway1F " ]. push_back ( " DarkRoom " );
-
-    If you want to look at each neighbor room of WestStairway1F
-    for ( auto neighbor : rpdMap [ " WestStairway1F " ])
-    {
-    cout << neighor << endl ;
-    }
-
-    Once you read the two input files and populate the rpdMap and nemesisLocation maps, you will write a
-    DFS type traversal that finds a path from WestStairway1F to Courtyard. You would probably want to write
-    the following recursive function
-    bool escapeRPD ( string jillsLocation , string roomNeedToReach ,
-    int jillsHealth , unordered_map < string , list < string > > rpdMap ,
-    unordered_map < string , string > & predecessor ,
-    unordered_map < string , int > & healthInRoom ,
-    unordered_map < string , int > nemesisLocations )
-    {
-
-    }
-
-    */  
+    
 
     //read command line txt file 1
-
     string readFileStr, roomName, neighbor, roomLocations;
     int dangerValue, startingHealth = 20;
 
